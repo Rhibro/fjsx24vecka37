@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(192, 159, 222);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100vw;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        font-size: 45px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    header {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
